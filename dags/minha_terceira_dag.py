@@ -1,5 +1,5 @@
 from time import sleep
-from airflow.decorators import dag
+from airflow.decorators import dag, task
 from datetime import datetime
 
 @dag(
@@ -40,5 +40,5 @@ def pipeline():
     t1 >> t2 >> t3 >> t4
     
 
-
+pipeline()
 
