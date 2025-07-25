@@ -6,7 +6,7 @@ from datetime import datetime
         dag_id="minha_primeira_dag",
         description="minha etl braba",
         schedule="* * * * *",
-        start_date=datetime(2025,1,1)
+        start_date=datetime(2025,1,1),
         catchup=False #bascfill
 )
 
