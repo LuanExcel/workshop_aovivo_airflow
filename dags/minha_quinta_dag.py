@@ -2,6 +2,7 @@ from time import sleep
 from airflow.decorators import dag, task
 from datetime import datetime
 
+# Dag é um decorador que vai tornar sua pipeline geranciada
 @dag(
         dag_id="minha_quinta_dag",
         description="minha etl braba",
